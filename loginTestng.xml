@@ -1,0 +1,21 @@
+<suite name="Parameterized login">
+
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>
+
+
+
+    <parameter name="url" value="http://ip2.scriptinglogic.net/index.php/sessions/login"/>
+
+
+    <test name="another section"> <!--test tag-->
+        <classes>
+            <class name="TestNGDemos.ParametersDemo.LoginFirst"/>
+            <class name="TestNGDemos.ParametersDemo.LoginSecond"/>
+            <class name="TestNGDemos.ParametersDemo.LoginThird"/>
+
+        </classes>
+
+    </test>
+</suite>

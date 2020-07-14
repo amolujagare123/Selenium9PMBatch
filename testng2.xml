@@ -1,0 +1,36 @@
+<suite name="project name">
+<!--
+<groups>
+    <run>
+
+        <exclude name="email" />
+
+    </run>
+
+</groups>-->
+
+
+    <test name="another section"> <!--test tag-->
+        <classes>
+            <class name="TestNGDemos.testngxml.ClassOne"/>
+        </classes>
+
+    </test>
+
+    <test name="login related test">
+
+        <groups>
+            <run>
+                <exclude name="email" />
+            </run>
+       </groups>
+
+        <classes>
+            <class name="TestNGDemos.testngxml.ClassTwo"/>
+           <class name="TestNGDemos.testngxml.ClassThree"/>
+
+        </classes>
+    </test>
+
+
+</suite>

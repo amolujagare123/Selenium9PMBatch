@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="login related test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.003">
+  <properties />
+  
+  
+            <testcase name="ClassThreeTest1" time="0.001" classname="TestNGDemos.testngxml.ClassThree" />
+                <testcase name="ClassThreeTest3" time="0.001" classname="TestNGDemos.testngxml.ClassThree" />
+                <testcase name="ClassThreeTest2" time="0.001" classname="TestNGDemos.testngxml.ClassThree" />
+      
+</testsuite>

@@ -1,0 +1,23 @@
+<suite name="Parameterized login">
+
+
+    <test name="for firefox"> <!--test tag-->
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestNGDemos.ParametersDemo.OpenFacebook"/>
+
+        </classes>
+    </test>
+
+
+    <test name="for chrome"> <!--test tag-->
+
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestNGDemos.ParametersDemo.OpenFacebook"/>
+
+        </classes>
+    </test>
+
+
+</suite>

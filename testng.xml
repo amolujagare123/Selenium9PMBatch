@@ -1,0 +1,35 @@
+<suite name="project name">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+
+
+    <parameter name="url" value="abcdxyz.com"/>
+    <parameter name="username" value="amol"/>
+    <parameter name="password" value="amol123"/>
+
+    <test name="another section"> <!--test tag-->
+        <classes>
+            <class name="TestNGDemos.testngxml.ClassOne"/>
+        </classes>
+
+    </test>
+
+
+    <test name="login related test">
+
+        <classes>
+
+
+            <class name="TestNGDemos.testngxml.ClassTwo"/>
+
+            <class name="TestNGDemos.testngxml.ClassThree"/>
+
+        </classes>
+    </test>
+
+
+</suite>
