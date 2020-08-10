@@ -25,16 +25,19 @@ public class AsssertDemo {
         driver.get("http://stock.scriptinglogic.net/");
 
         WebElement txtUsername =  driver.findElement(By.id("login-username"));
-        txtUsername.sendKeys("admin");
+        txtUsername.sendKeys("yuy");
 
         WebElement txtPassword = driver.findElement(By.name("password"));
-        txtPassword.sendKeys("admin");
+        txtPassword.sendKeys("jhjh");
 
         WebElement btnLogin = driver.findElement(By.name("submit"));
         btnLogin.click();
 
         String expected ="Wrong Username or Password";
+
         String actual = null;
+        // 2 int , 2 double , 2 arrays , 2 arraylists
+
         try {
            actual = driver.findElement(By.xpath("//div[@class='error-box round']")).getText();
         }
@@ -43,7 +46,12 @@ public class AsssertDemo {
             actual="";
         }
 
+
+
+
         Assert.assertEquals(actual,expected,"incorrect error message or error msg is absent");
+
+
 
 
     }
